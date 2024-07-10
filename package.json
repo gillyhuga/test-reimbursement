@@ -6,15 +6,26 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prisma-seed": "node prisma/seeder.js"
   },
   "dependencies": {
+    "@ant-design/nextjs-registry": "^1.0.0",
+    "@emotion/react": "^11.11.4",
+    "@emotion/styled": "^11.11.5",
+    "@prisma/client": "^5.16.2",
+    "axios": "^1.7.2",
+    "framer-motion": "^11.2.14",
+    "jspdf": "^2.5.1",
+    "jspdf-autotable": "^3.8.2",
+    "moment": "^2.30.1",
+    "next": "14.2.4",
     "react": "^18",
-    "react-dom": "^18",
-    "next": "14.2.4"
+    "react-dom": "^18"
   },
   "devDependencies": {
     "eslint": "^8",
-    "eslint-config-next": "14.2.4"
+    "eslint-config-next": "14.2.4",
+    "prisma": "^5.16.2"
   }
 }
