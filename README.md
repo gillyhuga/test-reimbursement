@@ -1,36 +1,62 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<br />
+<p align="center">
+  <h1 align="center">
+  <a href="https://gillyhuga.com/">
+    Reimbursement - System
+  </a>
+  </h1>
 
+### Built With
+- [Next.js](https://nextjs.org/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Ant Design](https://ant.design/)
+- [Prisma](https://www.prisma.io/)
+  
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+- [Node >= v18.17.0](https://nodejs.org/en/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### Installation
+- Clone repository
+  ```
+     https://github.com/gillyhuga/test-reimbursement.git
+  ```
+- Go to the project directory
+  ```
+     cd test-reimbursement
+  ```
+- Install dependencies
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+  ```
+     npm install
+  ```
+- Update .env with your Database URL:
+  ```
+     DATABASE_URL = your_postgree_db_url
+  ```
+- Migrate database table:
+  ```
+     npx prisma migrate dev
+  ```
+- Migrate database table:
+  ```
+     npx prisma migrate dev
+  ```
+- Run database seeder:
+  ```
+     npm run prisma-seed
+  ```
+- Start the server
+  ```
+     npm run dev
+  ```
+- Open `http://localhost:3000` with your browser to see the result
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Running the Application
+To run the application in your local environment, follow these steps:
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Ensure you have the prerequisites installed.
+2. Follow the installation steps provided above.
+3. Use `npm run dev` to start the server in development mode.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
